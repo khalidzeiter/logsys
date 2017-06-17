@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #eee;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer
+}
+
+body {
+    background: #2c3338;
+}
+
+div.header {
+    padding: 1rem;
+    width: 100%;
+    background: #363b41;
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+div.header p {
+    font-size: 1.5rem;
+    color: #eee;
+    padding: .5rem;
+}
+
+div.header p > span {
+    color: #ea4c88
+}
+
+div.header button,
+div.userInfo button {
+    background-image: none;
+    border: 0;
+    min-width: 8%;
+    background: #ea4c88;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+}
+
+div.notifications {
+    position: absolute;
+    padding: 1rem;
+    width: 100%;
+    top: 0;
+    background: #393;
+    font-size: 1rem;
+    text-align: center;
+    z-index: 99;
+    font-weight: bold;
+}
+
+div.login,
+div.signup,
+div.editProfile {
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lform {
+    width: 25%;
+}
+
+.form-field {
+    display: flex;
+    justify-content: center;
+}
+
+.form-field input[type=text],
+.form-field input[type=password] {
+    flex-grow: 1;
+    background-color: #434a52;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 1rem;
+}
+
+.form-field label {
+    text-align: center;
+    width: 18%;
+    padding: 1rem;
+    background: #363b41;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0.5rem;
+}
+
+.form-field input[type=submit] {
+    flex-grow: 1;
+    min-width: 50%;
+    padding: 1rem;
+    background: #ea4c88;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-field input {
+    background-image: none;
+    border: 0;
+}
+
+.login p,
+.signup p,
+.editProfile p {
+    color: #606468
+}
+
+.login p a,
+.signup p a,
+.editProfile p a {
+    text-decoration: none;
+    color: #eee
+}
+
+textarea {
+    flex-grow: 1;
+    min-width: 50%;
+    padding: 1rem;
+    background: #434a52;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+    background-image: none;
+    border: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    resize: vertical;
+}
+
+div.userInfo {
+    width: 80%;
+    margin: 5% auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+p.infoField {
+    width: 100%;
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+p.infoField span {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: normal;
+    text-indent: 2.5%
+}
+
+div.userInfo button {
+    padding: 1rem;
+    width: 25%;
+}
+
+div.userList {
+    margin: 1%;
+    padding: 1%;
+}
+
+div.userList table {
+    width: 100%;
+}
+
+div.userList table th {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: #ea4c88;
+    color: #fff;
+    padding: 1rem;
+}
+
+div.userList table tr {
+    background: #eee;
+}
+
+div.userList table tr:nth-of-type(even) {
+    background: #ddd;
+}
+
+div.userList table td {
+    font-size: 1.2rem;
+    color: #2c3338;
+    padding: .5rem;
+}
+
+td.control {
+    text-align: center
+}
+
+td.control span {
+    width: 20%
+}
+
+.form-field label.adminLabel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.form-field label.adminLabel span {
+    flex-basis: 50%;
+}
+
+/* Toggle Switch */
+
+/* The switch - the box around the slider */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    display: none;
+}
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c33;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #393;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #393;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
